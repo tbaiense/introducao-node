@@ -14,7 +14,7 @@ console.log('\n\nExibindo o diretório na 2a forma:\n' + dname);
 
 // Exibindo o conteúdo do diretório atual
 // 1. forma: exibindo apenas os nomes
-const dirEntNames = await readdir(/*path[, options]*/ import.meta.dirname);
+const dirEntNames = await readdir(/*path[, options]*/ import.meta.dirname); // É possível usar 'await' sozinho dentro de um módulo ES6
 
 console.log('\nArquivos contidos no diretório atual (1a forma):'); 
 for (const entName of dirEntNames) {
